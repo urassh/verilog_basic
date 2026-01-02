@@ -8,5 +8,9 @@ full_adder:
 	iverilog -o full_adder.out half_adder.v full_adder.v tb_full_adder.v
 	vvp full_adder.out
 
+adder_4bit:
+	iverilog -o adder_4bit.out half_adder.v full_adder.v adder_4bit.v tb_adder_4bit.v
+	vvp adder_4bit.out
+
 clean:
 	rm -f *.out wave.vcd
