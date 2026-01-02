@@ -1,9 +1,9 @@
-module  (
-    input wire a;
-    input wire b;
-    input wire carry_in;
-    output wire sum;
-    output wire carry_out;
+module full_adder (
+    input wire a,
+    input wire b,
+    input wire carry_in,
+    output wire sum,
+    output wire carry_out
 );
     wire sum_ab;
     wire carry_ab;
