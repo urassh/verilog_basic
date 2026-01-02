@@ -1,14 +1,14 @@
 module tb_half_adder;
     reg  reg_a;
     reg  reg_b;
-    wire sum;
-    wire carry_out;
+    wire wire_sum;
+    wire wire_carry;
 
     half_adder unit_half_adder_test (
-        .wire_a(reg_a),
-        .wire_b(reg_b),
-        .wire_sum(sum),
-        .wire_carry(carry_out)
+        .a(reg_a),
+        .b(reg_b),
+        .sum(wire_sum),
+        .carry(wire_carry)
     );
 
     initial begin

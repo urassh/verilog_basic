@@ -1,9 +1,9 @@
 module half_adder(
-    input wire wire_a,
-    input wire wire_b,
-    output wire wire_sum,
-    output wire wire_carry
+    input wire a,
+    input wire b,
+    output wire sum,
+    output wire carry
 );
-    assign wire_sum = wire_a ^ wire_b;
-    assign wire_carry = wire_a & wire_b;
+    assign sum = a ^ b;
+    assign carry = a & b;
 endmodule
