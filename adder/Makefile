@@ -5,7 +5,7 @@ half_adder:
 	vvp half_adder.out
 
 full_adder:
-	iverilog -o full_adder.out full_adder.v tb_full_adder.v
+	iverilog -o full_adder.out half_adder.v full_adder.v tb_full_adder.v
 	vvp full_adder.out
 
 clean:
