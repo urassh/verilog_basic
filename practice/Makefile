@@ -12,5 +12,9 @@ problem3:
 	iverilog -o problem3.out problem3.v tb_problem3.v
 	vvp problem3.out
 
+problem4:
+	iverilog -o problem4.out problem4.v tb_problem4.v
+	vvp problem4.out
+
 clean:
 	rm -f *.out wave.vcd
